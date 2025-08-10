@@ -62,7 +62,7 @@
 
     <!-- 2. Banner / Hero Section -->
     @php
-        $hero_image_url = 'https://images.unsplash.com/photo-1542314831-068cd1dbb5eb?q=80&w=2070&auto=format&fit=crop';
+        $hero_image_url = 'https://qubikahotel.com/wp-content/uploads/2025/07/Slider-2.jpg';
     @endphp
     <section id="hero" class="relative h-screen flex flex-col items-center justify-center">
         <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ $hero_image_url }}');"></div>
@@ -133,9 +133,9 @@
             </div>
             @php
                 $popular_rooms = [
-                    (object)['type' => 'Deluxe Suite', 'price' => 1500000, 'image_url' => 'https://placehold.co/600x400/c4a78c/ffffff?text=Deluxe+Suite'],
-                    (object)['type' => 'Premier Room', 'price' => 950000, 'image_url' => 'https://placehold.co/600x400/a1b0c4/ffffff?text=Premier+Room'],
-                    (object)['type' => 'Standard Room', 'price' => 600000, 'image_url' => 'https://placehold.co/600x400/d1c8c0/ffffff?text=Standard+Room'],
+                    (object)['type' => 'Deluxe Suite', 'price' => 1500000, 'image_url' =>'https://www.sudamalaresorts.com/app/uploads/2023/12/deluxe-suite-1280x600-c-center.jpg'],
+                    (object)['type' => 'Premier Room', 'price' => 950000, 'image_url' => 'https://www.padmahotelbandung.com/images/content/premier-room.jpg'],
+                    (object)['type' => 'Standard Room', 'price' => 600000, 'image_url' =>'https://amorgoshotel.com/wp-content/uploads/2014/12/Amorgos-Standard-Room1-e1464286427430.jpg'],
                 ];
             @endphp
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -239,7 +239,7 @@
                     'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=2070&auto=format&fit=crop',
                     'https://images.unsplash.com/photo-1540541338287-41700207dee6?q=80&w=2070&auto=format&fit=crop',
                     'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=2070&auto=format&fit=crop',
-                    'https://images.unsplash.com/photo-1590474404327-861a4155a5a2?q=80&w=1974&auto=format&fit=crop',
+                    'https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img,w_890,h_444/https://www.flokq.com/blog/wp-content/uploads/2020/10/LINE_P20201015_234532294.png',
                     'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=2070&auto=format&fit=crop',
                 ];
                 $gallery_chunks = array_chunk($gallery_images, 2);

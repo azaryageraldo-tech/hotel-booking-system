@@ -21,7 +21,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'role', // Pastikan kolom role bisa diisi
+        'role',
+        'google_id', // Pastikan kolom role bisa diisi
     ];
 
     /**
@@ -53,5 +54,10 @@ class User extends Authenticatable
     public function bookings(): HasMany
     {
         return $this->hasMany(Booking::class);
+    }
+
+    public function reviews() 
+    { 
+        return $this->hasMany(Review::class); 
     }
 }

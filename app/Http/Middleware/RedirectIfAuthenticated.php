@@ -29,6 +29,11 @@ class RedirectIfAuthenticated
                     return redirect(route('admin.dashboard'));
                 }
 
+                // TAMBAHKAN KONDISI INI
+                if ($user->role === 'resepsionis') {
+                        return redirect(route('receptionist.dashboard'));
+                }
+
                 // Jika user adalah tamu, arahkan ke dashboard tamu
                 return redirect(route('dashboard'));
             }

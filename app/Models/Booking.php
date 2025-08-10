@@ -39,4 +39,9 @@ class Booking extends Model
     {
         return $this->belongsTo(Room::class);
     }
+
+    public function review() 
+    { 
+        return $this->hasOne(Review::class); 
+    }
 }
